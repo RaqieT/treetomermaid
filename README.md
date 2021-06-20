@@ -2,7 +2,7 @@
 ## Tool for generating directory diagrams.
 1. Go here: https://raqiet.github.io/treetomermaid/
 2. In first text area type in desired, root directory name.
-3. In second one you have to provide `tree` command result (just type in in PowerShell/Cmd/Windows Terminal command `tree` when you're in desired location). Example result:
+3. In second one you have to provide `tree` command result (just type in PowerShell/Cmd/Windows Terminal command `tree` when you're in desired location). Example result:
 ```
 Folder PATH listing
 Volume serial number is XXXX-XXXX
