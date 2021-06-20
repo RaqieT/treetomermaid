@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react'
 import Branch from './Branch'
-import { BRANCH_REPO } from './Branch'
 
 class App extends React.Component {
   constructor(props) {
@@ -23,17 +22,13 @@ class App extends React.Component {
     this.setState({rootDirName: event.target.value});
   }
 
-  base64WithoutEqualsInTheEnd(json) {
+  base64(json) {
     return Buffer.from(json).toString('base64').slice(0, -2);
   }
 
   handleSubmit() {
     let json = this.treeToMermaid(this.state.treeCmd, this.state.rootDirName);
-    this.setState({result: json, result64: this.base64WithoutEqualsInTheEnd(json)});
-  }
-
-  utf8_to_b64( str ) {
-    return window.btoa(unescape(encodeURIComponent( str )));
+    this.setState({result: json, result64: this.base64(json)});
   }
 
   getMermaidConfig(branches) {
