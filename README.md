@@ -10,5 +10,5 @@ C:.
 └───tst2
     └───tst3
 ```
-`Warning! Tested only with Powershell tree cmd!`
+`Warning! Tested only with Powershell tree cmd!`  
 4. Press `Convert` and then use `See diagram` button, you will be redirected to `https://mermaid-js.github.io/mermaid-live-editor/`, where you can view and generate svg/png format file.
